@@ -1,0 +1,53 @@
+.navbar {
+  background-color: #999;
+  padding: 0px 20px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+/* Left & Right logo circles */
+.nav-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #555; /* white text */
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.2s;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav-links a:hover {
+  opacity: 0.8;
+  color: #000;
+}
+.resume-link {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

@@ -1,0 +1,62 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="240"
+  height="120"
+  viewBox="0 0 240 120"
+  role="img"
+  aria-labelledby="termTitle termDesc"
+>
+  <title id="termTitle">Terminal typing Hello world</title>
+  <desc id="termDesc">An animated terminal typing Hello world with a blinking cursor</desc>
+
+  <!-- Terminal frame -->
+  <rect x="10" y="15" width="220" height="90" rx="8" ry="8" fill="#0f1724"/>
+  <rect x="10" y="15" width="220" height="18" rx="8" ry="8" fill="#0b1220"/>
+  <circle cx="26" cy="24" r="3" fill="#ff5f56"/>
+  <circle cx="38" cy="24" r="3" fill="#ffbd2e"/>
+  <circle cx="50" cy="24" r="3" fill="#27c93f"/>
+
+  <!-- Terminal content -->
+  <g transform="translate(26,55)" font-family="monospace" font-size="18px" fill="#e6f0ff">
+    <!-- Typing text -->
+    <text class="typed">Hello world</text>
+    <!-- Blinking cursor -->
+    <rect class="cursor" x="0" y="-14" width="10" height="20" fill="#e6f0ff" rx="2" ry="2"/>
+  </g>
+
+  <style>
+    .typed {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0ch;
+      animation: typing 3s steps(11, end) infinite 1s;
+    }
+
+    .cursor {
+      animation: blink 1s steps(2, start) infinite, move 3s steps(11, end) infinite 1s;
+    }
+
+    @keyframes typing {
+      0% { width: 0ch; }
+      60% { width: 11ch; } /* 'Hello world' has 11 chars */
+      100% { width: 0ch; }
+    }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    @keyframes move {
+      0%   { transform: translateX(0ch); }
+      60%  { transform: translateX(11ch); }
+      100% { transform: translateX(0ch); }
+    }
+
+    /* Reduce motion preference */
+    @media (prefers-reduced-motion: reduce) {
+      .typed { animation: none; width: 11ch; }
+      .cursor { animation: blink 1s steps(2, start) infinite; transform: translateX(11ch); }
+    }
+  </style>
+</svg>

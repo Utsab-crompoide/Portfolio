@@ -1,0 +1,55 @@
+.AppHome {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+  padding-left: 0;
+  gap: 40px;
+  padding: 20px 0;
+}
+.intro {
+  color: #222;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.outline {
+  font-weight: 700;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px #222;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.ownImage {
+  width: 400px;
+  height: 500px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 2px 2px 4px 4px #d3d3d3;
+}
+
+.spacer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60%;
+}
+
+.description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+  max-width: 800px;
+}
