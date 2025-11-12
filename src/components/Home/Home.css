@@ -1,14 +1,21 @@
-.AppHome {
+.appHome {
   background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding: 20px 0;
+  gap: 10px;
+}
+.homeContent {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
-  padding-left: 0;
-  gap: 40px;
-  padding: 20px 0;
+  gap: 20px;
 }
 .intro {
   color: #222;
@@ -52,4 +59,36 @@
   color: #777;
   line-height: 1.6;
   max-width: 800px;
+}
+
+.socialMedia {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.socialMedia::after {
+  content: "";
+  width: 70%;
+  position: absolute;
+  bottom: 4;
+  left: 360px;
+  right: 0;
+  height: 2px;
+  background-color: #000;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.socialIcon:hover {
+  transform: scale(1.2);
 }

@@ -5,7 +5,6 @@ import logo from "../../assets/logo.svg";
 function Navbar() {
   return (
     <nav className="navbar">
-      {/* <div className="nav-logo left-logo">o</div> */}
       <img src={logo} alt="Animated Hello World terminal" style={{ width: 80, height: 46 }} />
 
       <ul className="nav-links">
@@ -20,7 +19,6 @@ function Navbar() {
         </li>
         <li className="resume-link">
           <a href="#resume">RESUME</a>
-          <FaFileDownload size={14} color="#666" />
         </li>
       </ul>
     </nav>

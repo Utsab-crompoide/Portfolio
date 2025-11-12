@@ -7,10 +7,14 @@
   justify-content: center;
   gap: 40px;
   width: fit-content;
-  margin-bottom: 10px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  margin: 0;
 }
 
-/* Left & Right logo circles */
 .nav-logo {
   width: 30px;
   height: 30px;
@@ -33,7 +37,7 @@
 }
 
 .nav-links a {
-  color: #555; /* white text */
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
   letter-spacing: 1px;
