@@ -4,11 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
   margin: 0 auto;
-  padding-left: 0;
-  padding: 20px 0;
   gap: 10px;
+  padding-top: 40px;
 }
 .homeContent {
   display: flex;
@@ -66,21 +64,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
-  gap: 40px;
+  gap: 30px;
   position: relative;
-  padding-left: 20px;
 }
 
 .socialMedia::after {
   content: "";
-  width: 70%;
-  position: absolute;
-  bottom: 4;
-  left: 360px;
-  right: 0;
+  flex: 1;
   height: 2px;
   background-color: #000;
+  margin-left: auto;
+}
+
+.socialMedia > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .socialIcon {
@@ -91,4 +91,172 @@
 
 .socialIcon:hover {
   transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .homeContent {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .ownImage {
+    width: 300px;
+    height: 380px;
+  }
+
+  .intro {
+    font-size: 36px;
+  }
+
+  .bold {
+    font-size: 36px;
+  }
+
+  .outline {
+    font-size: 36px;
+  }
+
+  .spacer {
+    max-width: 80%;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .socialMedia {
+    gap: 25px;
+  }
+
+  .socialMedia::after {
+    height: 1.5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .appHome {
+    gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .homeContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .intro {
+    font-size: 28px;
+  }
+
+  .bold {
+    font-size: 28px;
+  }
+
+  .outline {
+    font-size: 28px;
+  }
+
+  .ownImage {
+    width: 250px;
+    height: 300px;
+  }
+
+  .spacer {
+    max-width: 95%;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .socialMedia {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .socialMedia > a {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+
+  .socialMedia::after {
+    content: "";
+    width: calc(100% - 40px);
+    height: 1px;
+    position: absolute;
+    bottom: -25px;
+    left: 20px;
+    margin-left: 0;
+    flex: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .appHome {
+    gap: 15px;
+    padding: 15px 5px;
+  }
+
+  .homeContent {
+    gap: 15px;
+  }
+
+  .intro {
+    font-size: 22px;
+  }
+
+  .bold {
+    font-size: 22px;
+  }
+
+  .outline {
+    font-size: 22px;
+  }
+
+  .ownImage {
+    width: 200px;
+    height: 240px;
+  }
+
+  .spacer {
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .socialMedia {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding-left: 15px;
+  }
+
+  .socialMedia > a {
+    display: inline-flex;
+    margin-right: 0;
+  }
+
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .socialMedia::after {
+    content: "";
+    width: calc(100% - 30px);
+    height: 1px;
+    position: absolute;
+    bottom: -18px;
+    left: 15px;
+    margin-left: 0;
+    flex: none;
+  }
 }

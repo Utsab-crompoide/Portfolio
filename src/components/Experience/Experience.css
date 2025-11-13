@@ -1,0 +1,70 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.experience h1 {
+  max-width: 90%;
+  width: 82%;
+  text-align: left;
+}
+
+.experience h3,
+ul,
+p {
+  margin-block-start: 0px !important;
+  margin-block-end: 0px !important;
+}
+
+.experience p {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1;
+  font-size: 14px;
+}
+
+.experienceContent {
+  max-width: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid #f1f1f1;
+  border-radius: 20px;
+  background-color: #444;
+  padding: 20px;
+}
+
+.experienceItem {
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.experienceTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.expText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
