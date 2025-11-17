@@ -20,7 +20,7 @@ function Skills() {
         Database: [
             { name: 'MySQL', logo: 'Advanced' },
             { name: 'Postgres', logo: 'Advanced' },
-            { name: 'DynamoDb', logo: 'Intermediate' },
+            { name: 'DynamoDB', logo: 'Intermediate' },
         ]
     },
     {
@@ -38,6 +38,7 @@ function Skills() {
             { name: 'AWS', logo: 'Intermediate' },
             { name: 'Firebase', logo: 'Intermediate' },
             { name: 'Cloudflare', logo: 'Intermediate' },
+            { name: 'Supabase', logo: 'Intermediate' },
         ]
     }
     ];

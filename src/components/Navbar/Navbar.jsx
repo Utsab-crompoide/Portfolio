@@ -1,5 +1,4 @@
 import "./Navbar.css";
-import { FaDownload, FaFileDownload } from "react-icons/fa";
 import logo from "../../assets/logo.svg";
 
 function Navbar() {
@@ -9,16 +8,19 @@ function Navbar() {
 
       <ul className="nav-links">
         <li>
+          <a href="#experience">EXPERIENCES</a>
+        </li>
+        <li>
+          <a href="#contact">SKILLS</a>
+        </li>
+        <li>
           <a href="#projects">PROJECTS</a>
-        </li>
-        <li>
-          <a href="#about">ABOUT</a>
-        </li>
-        <li>
-          <a href="#contact">CONTACT</a>
         </li>
         <li className="resume-link">
           <a href="#resume">RESUME</a>
+        </li>
+        <li>
+          <a href="#about">ABOUT</a>
         </li>
       </ul>
     </nav>
