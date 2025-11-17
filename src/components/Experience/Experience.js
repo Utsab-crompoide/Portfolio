@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Experience.css';
 import Arhant from '../../assets/aSolution.png';
 import CFLogo from '../../assets/cf.jpeg';
@@ -7,6 +7,8 @@ import CStack from '../../assets/cstack.png';
 import Rb from '../../assets/rb.png';
 
 function Experience() {
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
     const experiences = [
         {
             title: 'Software Developer at RenderBooking',
@@ -75,12 +77,21 @@ function Experience() {
         },
     ];
 
+    const toggleExpand = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
+
     return (
         <div className="experience">
             <h1>Work Experience</h1>
             <div className="experienceContent">
                 {experiences.map((exp, index) => (
-                    <div key={index} className="experienceItem">
+                    <div
+                        key={index}
+                        className={`experienceItem expanded`}
+                        onMouseEnter={() => setExpandedIndex(index)}
+                        onMouseLeave={() => setExpandedIndex(null)}
+                    >
                         <div className="experienceLogo">
                             <img src={exp.logo} alt={exp.title} style={exp.style} />
                         </div>

@@ -34,13 +34,40 @@
   border: 1px solid #000;
   border-radius: 10px;
   background-color: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  max-height: 150px;
+  overflow: hidden;
 }
 
 .experienceItem:hover {
   background-color: #36454f;
   color: #fff;
-  transform: translateY(-3px);
+  max-height: 1000px;
+  transition: all 0.3s ease-in-out;
+}
+
+.experienceItem:hover .experienceHeader {
+  border-bottom: 1px solid #fff;
+}
+
+.experienceText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.expandToggle {
+  display: none;
+}
+
+.experienceItem:not(:hover) .experienceText {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .experienceLogo {

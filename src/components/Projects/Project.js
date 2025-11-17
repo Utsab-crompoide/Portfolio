@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Project.css'
 import RB from '../../assets/RBP.png'
 import PZ from '../../assets/PZ.png'
@@ -7,6 +7,8 @@ import LX from '../../assets/LUXE.png'
 import DV from '../../assets/divine.png'
 
 function Project() {
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
     const projectData = [
         {
             title: 'RenderBooking',
@@ -40,18 +42,34 @@ function Project() {
         }
     ]
 
+    const toggleExpand = (index) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
+
     return (
         <div className='project'>
             <h1>Projects</h1>
             <div className='projectContent'>
                 {projectData.map((project, index) => (
-                    <div className='projectItem'>
+                    <div
+                        key={index}
+                        className={`projectItem ${expandedIndex === index ? 'expanded' : 'collapsed'}`}
+                    >
                         <div className='projImageContainer'>
                             <img className='projImage' src={project.imageUrl} alt={project.title} />
                         </div>
                         <div className='projDesc'>
                             <h2>{project.title}</h2>
                             <p>{project.description}</p>
+                            <button
+                                className='seeMoreBtn'
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    toggleExpand(index);
+                                }}
+                            >
+                                {expandedIndex === index ? 'See Less' : 'See More'}
+                            </button>
                         </div>
                     </div>
                 ))}
