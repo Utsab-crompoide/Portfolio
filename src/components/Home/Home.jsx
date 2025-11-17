@@ -7,25 +7,25 @@ function Home() {
     social_media: [
       {
         name: "Facebook",
-        url: "https://www.facebook.com/",
+        url: "https://www.facebook.com/utsab.khatiwada.2/",
         icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg",
         color: "#1877F2",
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/",
+        url: "https://www.linkedin.com/in/utsab-khatiwada-12a24619b/",
         icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg",
         color: "#0A66C2",
       },
       {
         name: "GitHub",
-        url: "https://github.com/",
+        url: "https://github.com/Utsab-crompoide",
         icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg",
         color: "#000000ff",
       },
       {
         name: "Twitter",
-        url: "https://twitter.com/",
+        url: "https://x.com/_crompoide",
         icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg",
         color: "#1DA1F2",
       },
